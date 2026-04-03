@@ -10,7 +10,7 @@ int main() {
 
     *ptr = y;
 
-    printf("%d\n");
+    printf("%d\n", x);
 
     return 0;
 
