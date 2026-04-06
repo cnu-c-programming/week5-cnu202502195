@@ -18,6 +18,6 @@ int main() {
 
     long val = my_strtol(str, &end);
 
-    printf("ld %s\n", val, end);
+    printf("%ld %s\n", val, end);
     return 0;
 }
