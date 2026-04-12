@@ -1,17 +1,12 @@
 #include <stdio.h>
 
 void print_reverse(int *arr, int size) {
-    int *ptr = &arr[4];
-    printf("%d ", *ptr);
-    ptr--;
-    printf("%d ", *ptr);
-    ptr--;
-    printf("%d ", *ptr);
-    ptr--;
-    printf("%d ", *ptr);
-    ptr--;
-    printf("%d ", *ptr);
-    ptr--;
+    int *ptr = arr+ size -1;
+
+    for(int i=0;i<size;i++) {
+        printf("%d ", *ptr); 
+        ptr--;
+    }
 }
 
 int main() {
